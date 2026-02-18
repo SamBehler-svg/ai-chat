@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>AI Chat Assistant</title>
+ <link rel="stylesheet" href="ai-chat.css">
+</head>
+<body>
+ <div class="container">
+   <div class="chat-container">
+     <h1>AI Chat Assistant</h1>
+    
+     <div class="prompt-section">
+       <h3>Try asking:</h3>
+       <p class="prompt-template" id="prompt-template">Ask me to make a riddle</p>
+     </div>
+
+
+     <div id="chat-display" class="chat-display">
+       <!-- Messages will appear here -->
+     </div>
+
+
+     <div class="input-section">
+       <input
+         type="text"
+         id="user-input"
+         class="user-input"
+         placeholder="Type your message here..."
+       >
+       <button id="send-button" class="send-button">Send</button>
+     </div>
+
+
+     <div id="loading" class="loading" style="display: none;">
+       <div class="spinner"></div>
+       <p>AI is thinking...</p>
+     </div>
+   </div>
+ </div>
+
+
+ <script type="module" src="ai-chat.js"></script>
+</body>
+</html>
